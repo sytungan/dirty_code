@@ -63,7 +63,7 @@ public class BTreeFile implements DbFile {
 					throw new IllegalArgumentException("Read past end of table");
 				}
 				if (retval < BufferPool.getPageSize()) {
-					throw new IllegalArgumentException("Unable to rdz "
+					throw new IllegalArgumentException("Unable to rdzz "
 							+ BufferPool.getPageSize() + " bytes from BTreeFile");
 				}
 				Debug.log(1, "BTreeFile.readPage: read page %d", id.getPageNumber());
